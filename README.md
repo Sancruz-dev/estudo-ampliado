@@ -5,7 +5,7 @@
 
 ###
 > _Amplie seu entendimento a cada passo..._
- 
+
 <br/>
 
 ## Sumário
@@ -13,11 +13,17 @@
 
 2. [Percorrendo Camadas](#2-Percorrendo-Camadas)
 
-   1. [Estrutura de Pastas](#I-Estrutura-de-Pastas)
-   2. [Componentes da Aplicação](#II-Componentes-da-Aplicação)
-   3. [Fluxo de Dados dos Componentes](#III-Fluxo-de-Dados-dos-Componentes)
-   4. [Disponibilidade](#IV-Disponibilidade)
-   5. [E2E do Estudo Ampliado](#V-E2E-do-Estudo-Ampliado)
+   2.1. [Estrutura de Pastas](#2-1-Camada-I--Estrutura-de-Pastas)
+      - [Front End Dir](#a-Front-End)
+      - [Back End Dir](#a-Back-End)
+
+   2.2. [Componentes da Aplicação](#II-Componentes-da-Aplicação)
+
+   2.3. [Fluxo de Dados dos Componentes](#III-Fluxo-de-Dados-dos-Componentes)
+
+   2.4. [Disponibilidade](#IV-Disponibilidade)
+   
+   2.5. [E2E do Estudo Ampliado](#V-E2E-do-Estudo-Ampliado)
 ##
 
 <br/>
@@ -34,8 +40,7 @@ Estudo Ampliado é um método que consiste em organizar determinado projeto, bas
 
       - **Sobre a imagem:** Suponhamos que seja uma figura de uma cidade vista de cima, sendo possível enxergar somente sua forma, pois as ruas, casas, prédios e tudo o que há nela está minúsculo, entretanto, se a ampliarmos um pouco, aí sim veremos seus componentes. Em virtude disso, a cada aproximação será visto mais detalhes dessa zona urbana, fazendo com que saibamos toda sua composição obtendo mais informação possível.
 
-      - **Comparando ao projeto:** no sistema, a primeira camada começa quando é **analizado** e **entendido** todas as principais pastas contidas nele, por outro lado, a partir do momento em que **analizamos** aquela imagem e **entendemos** que se trata de uma cidade, a lógica é a mesma quando abrimos a [estrutura de pastas](#camada-i--estrutura-de-pastas) e descobrimos suas funções.
-
+      - **Comparando ao projeto:** no sistema, a primeira camada começa quando é **analizado** e **entendido** todas as principais pastas contidas nele, por outro lado, a partir do momento em que **analizamos** aquela imagem e **entendemos** que se trata de uma cidade, a lógica é a mesma quando abrimos a [estrutura de pastas](#I-Estrutura-de-Pastas) e descobrimos suas funções.
 
    ###
 </details>
@@ -44,8 +49,8 @@ Estudo Ampliado é um método que consiste em organizar determinado projeto, bas
 
 ## 2. Percorrendo Camadas
 As camadas, vão determinar em qual nível de entendimento você está em relação ao software, além disso, uma vez que é iniciado cada etapa, a forma de análise varia conforme o avanço. Como propósito de demonstração, será utilizado uma aplicação real logo abaixo.
-   
-### I. Estrutura de Pastas
+
+### 2.1. *Camada I* - Estrutura de Pastas
 Primordialmente, será analizado as principais pastas contidas no projeto, mas antes, abriremos o diretório raíz:
 
 <img height="300" src="https://user-images.githubusercontent.com/83969467/151673984-0735a035-4851-4797-a134-e7ee85b6a9a2.png" alt="Diretório Raíz" title="Diretório Raíz">
@@ -60,13 +65,14 @@ Primordialmente, será analizado as principais pastas contidas no projeto, mas a
    - **Pastas**: node_modules, project_guide, 
 
    - **Arquivos**: package.json, tsconfig.json, README.md, yarn.lock, .gitignore 
-
-   <br/>
 </details> 
+
+<br/>
 
 Agora focaremos em duas partes: **Frontend** e **Backend**. 
 
-### 1.1. Front End
+
+### A) Front End
 
 <img height="450" src="https://user-images.githubusercontent.com/83969467/152595731-255c4d32-25cf-4d28-94bf-03c4165f96b0.png" alt="Diretório Raíz" title="Diretório Raíz">
 
