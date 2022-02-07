@@ -52,6 +52,8 @@ Estudo Ampliado é um método que consiste em organizar determinado projeto, bas
 ## 2. Percorrendo Camadas
 As camadas, vão determinar em qual nível de entendimento você está em relação ao software, além disso, uma vez que é iniciado cada etapa, a forma de análise varia conforme o avanço. Como propósito de demonstração, será utilizado uma aplicação real logo abaixo.
 
+
+
 ### 2.1. Estrutura de Pastas
 > **Camada I**
 
@@ -86,44 +88,44 @@ Temos então `public` e `src` como as duas principais pastas para a criação da
 
 ###
 
-**public** - contém apenas dois arquivos: o primeiro é o **index.html**, cuja função é trazer e renderizar todo o código vindo de **src**. E o segundo é o **_redirects** usado como configuração de redirecionamento para hospedar o website no [Netlify](https://www.netlify.com/).
-
+**public** - contém apenas dois arquivos: o primeiro é o **index.html**, cuja função é trazer e renderizar todo o código vindo de **src**, e o segundo é o **_redirects**, usado para a configuração de redirecionamento para hospedar o website no [Netlify](https://www.netlify.com/).
+.
 <details> 
    <summary>Ver pasta</summary>
 
    ###
-   <img align="center" src="https://user-images.githubusercontent.com/83969467/152815294-83b61296-8ec5-4cfa-b0f9-23af62138e4b.png" alt="Diretório Raíz" title="Diretório Raíz"> 
+   <img align="center" src="https://user-images.githubusercontent.com/83969467/152815294-83b61296-8ec5-4cfa-b0f9-23af62138e4b.png" alt="Pasta public" title="Pasta public"> 
 </details> 
 
 <br/>
 
-**source/src** - É compostos por algumas pastas (havendo mais pastas e/ou arquivos dentro) que vão formar módulos e componentes, para depois serem encapsulados na tag `<App/>` dentro do renderizador do `ReactDOM`, que também faz a busca do `id="root"` que foi criado em **public**.
+**source/src** - É compostos por algumas pastas (havendo mais pastas e/ou arquivos dentro) que vão formar módulos e componentes, para depois serem encapsulados na tag `<App/>` dentro do renderizador `ReactDOM`, que também faz a busca do `id="root"` que foi criado em **public**.
 
 <details>
-   <summary>Ver pasta e mais detalhes</summary> 
+   <summary>Ver pasta + detalhes</summary> 
 
    ###
 
-   <img align="center" src="https://user-images.githubusercontent.com/83969467/152816811-7660c14c-5fcd-4d09-bc22-3a3023232f1c.png" alt="Diretório Raíz" title="Diretório Raíz"> 
+   <img align="center" src="https://user-images.githubusercontent.com/83969467/152855598-e3472f7c-58f7-4a43-a84a-7f5ff27bd1b5.png" alt="Pasta src" title="Pasta src"> 
 
    ###
-   Todas os nomes citados abaixo, são pastas que vão conter outras pastas e/ou arquivos dentro delas.
+   Todas os nomes citados abaixo, são pastas compostas por outras pastas e/ou arquivos.
 
    - **assets**: contém nossos bens/recursos de folha de estilo, imagens, fontes e até scripts. Ou seja, é o complemento de conteúdo.
 
    - **components**: permite você dividir a UI em partes independentes, reutilizáveis e pensar em cada parte isoladamente. 
 
-   - **pages**: obtém cada página com sua interface completa, acrescentado de regra de negócio, captura de argumento passado na rota determinada e manipulação de estrutura de dados.
+   - **pages**: obtém cada página com sua interface completa, com a adição da regra de negócio, captura de argumento passado na rota determinada e manipulação de estrutura de dados.
 
    - **types**: cria a estrutura de tipos do frontend integrando-a à API.
 
-   - **ultils**: guarda arquivos utilitários para axiliar funções específicas no projeto, como por exemplo a validação de email e criação de variável de ambiente. 
+   - **ultils**: guarda arquivos utilitários para auxiliar funções específicas no projeto, como por exemplo a validação de email e criação da variável de ambiente. 
 
 </details> 
 
-<br>
-
 ### • Back End
+
+
 ### 2.2. Componentes da Aplicação
 > **Camada II**
 
