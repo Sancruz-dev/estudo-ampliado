@@ -5,13 +5,13 @@
 
 ###
 > _Amplie seu entendimento a cada passo..._
-
+ 
 <br/>
 
 ## Sumário
 1. [Introdução](#1-o-que-é)
 
-2. [Percorrendo Camadas](#2.-Percorrendo-Camadas)
+2. [Percorrendo Camadas](#2.-percorrendo-camadas)
 
    1. [Estrutura de Pastas](#I.-Estrutura-de-Pastas)
    2. [Componentes da Aplicação](#II.-Componentes-da-Aplicação)
