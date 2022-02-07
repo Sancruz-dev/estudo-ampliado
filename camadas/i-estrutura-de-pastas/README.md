@@ -2,9 +2,9 @@
 
 > ### Links de Navegação
 
-1. [Introdução](https://../../)
+1. [Introdução](https://github.com/Sancruz-dev/estudo-ampliado#1-introdução)
 
-2. [Percorrendo Camadas](../../)
+2. [Percorrendo Camadas](https://github.com/Sancruz-dev/estudo-ampliado#2-percorrendo-camadas)
 
    2.1. [Estrutura de Pastas](#)
       - [Diretório Frontend](#-diretório-frontend)
@@ -20,8 +20,6 @@
 ***
 
 ## **1ª Camada**
-
-
 
 Primordialmente, será analizado as principais pastas contidas no projeto, mas antes, abriremos o diretório raíz:
 
