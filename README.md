@@ -9,9 +9,9 @@
 <br/>
 
 ## Sumário
-1. [Introdução](#1.-O-que-é?)
+1. [Introdução](#1-o-que-é)
 
-2. [Percorrendo Camadas](#Percorrendo-Camadas)
+2. [Percorrendo Camadas](#2.-Percorrendo-Camadas)
 
    1. [Estrutura de Pastas](#I.-Estrutura-de-Pastas)
    2. [Componentes da Aplicação](#II.-Componentes-da-Aplicação)
@@ -42,7 +42,7 @@ Estudo Ampliado é um método que consiste em organizar determinado projeto, bas
 
 <br>
 
-## Percorrendo Camadas
+## 2. Percorrendo Camadas
 As camadas, vão determinar em qual nível de entendimento você está em relação ao software, além disso, uma vez que é iniciado cada etapa, a forma de análise varia conforme o avanço. Como propósito de demonstração, será utilizado uma aplicação real logo abaixo.
    
 ### I. Estrutura de Pastas
