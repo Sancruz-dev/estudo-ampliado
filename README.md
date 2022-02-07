@@ -1,4 +1,4 @@
-# Estudo Ampliado 🔎
+# 🔎 Estudo Ampliado
 
 
 <img height="185" src="https://user-images.githubusercontent.com/83969467/150009028-382503a7-c4b6-421a-8f85-5b25cf1e1a06.gif">
