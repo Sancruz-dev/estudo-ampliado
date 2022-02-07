@@ -13,17 +13,17 @@
 
 2. [Percorrendo Camadas](#2-Percorrendo-Camadas)
 
-   2.1. [Estrutura de Pastas](#2-1-Camada-I--Estrutura-de-Pastas)
+   2.1. [Estrutura de Pastas](#21-estrutura-de-pastas)
       - [Front End Dir](#a-Front-End)
       - [Back End Dir](#a-Back-End)
 
-   2.2. [Componentes da Aplicação](#II-Componentes-da-Aplicação)
+   2.2. [Componentes da Aplicação](#22-componentes-da-aplicação)
 
-   2.3. [Fluxo de Dados dos Componentes](#III-Fluxo-de-Dados-dos-Componentes)
+   2.3. [Fluxo de Dados dos Componentes](#23-fluxo-de-dados-dos-componentes)
 
-   2.4. [Disponibilidade](#IV-Disponibilidade)
+   2.4. [Disponibilidade](#2.4-disponibilidade)
    
-   2.5. [E2E do Estudo Ampliado](#V-E2E-do-Estudo-Ampliado)
+   2.5. [E2E do Estudo Ampliado](#2.5-e2e-do-estudo-ampliado)
 ##
 
 <br/>
@@ -51,7 +51,7 @@ Estudo Ampliado é um método que consiste em organizar determinado projeto, bas
 As camadas, vão determinar em qual nível de entendimento você está em relação ao software, além disso, uma vez que é iniciado cada etapa, a forma de análise varia conforme o avanço. Como propósito de demonstração, será utilizado uma aplicação real logo abaixo.
 
 ### 2.1. Estrutura de Pastas
->  **Camada I**
+> **Camada I**
 
 Primordialmente, será analizado as principais pastas contidas no projeto, mas antes, abriremos o diretório raíz:
 
@@ -79,17 +79,24 @@ Agora focaremos em duas partes: **Frontend** e **Backend**.
 <img height="450" src="https://user-images.githubusercontent.com/83969467/152595731-255c4d32-25cf-4d28-94bf-03c4165f96b0.png" alt="Diretório Raíz" title="Diretório Raíz">
 
 #### 2. Back End
+### 2.2. Componentes da Aplicação
+> **Camada II**
 
-### II. Componentes da Aplicação
+... 
+
+### 2.3. Fluxo de Dados dos Componentes
+> **Camada III**
+
 ...
 
-### III. Fluxo de Dados dos Componentes
+### 2.4. Disponibilidade
+> **Camada IV**
+
 ...
 
-### IV. Disponibilidade
-...
+### 2.5. E2E do Estudo Ampliado
+> **Camada V**
 
-### V. E2E do Estudo Ampliado
 ...
 
 
