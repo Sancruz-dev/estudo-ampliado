@@ -13,11 +13,11 @@
 
 2. [Percorrendo Camadas](#2-Percorrendo-Camadas)
 
-   1. [Estrutura de Pastas](#I.-Estrutura-de-Pastas)
-   2. [Componentes da Aplicação](#II.-Componentes-da-Aplicação)
-   3. [Fluxo de Dados dos Componentes](#III.-Fluxo-de-Dados-dos-Componentes)
-   4. [Disponibilidade](#IV.-Disponibilidade)
-   5. [E2E do Estudo Ampliado](#V.-E2E-do-Estudo-Ampliado)
+   1. [Estrutura de Pastas](#I-Estrutura-de-Pastas)
+   2. [Componentes da Aplicação](#II-Componentes-da-Aplicação)
+   3. [Fluxo de Dados dos Componentes](#III-Fluxo-de-Dados-dos-Componentes)
+   4. [Disponibilidade](#IV-Disponibilidade)
+   5. [E2E do Estudo Ampliado](#V-E2E-do-Estudo-Ampliado)
 ##
 
 <br/>
