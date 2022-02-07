@@ -1,4 +1,4 @@
-# 1. Estrutura de Pastas
+# 2.1. Estrutura de Pastas
 > **1ª Camada**
 
 Primordialmente, será analizado as principais pastas contidas no projeto, mas antes, abriremos o diretório raíz:
@@ -22,7 +22,7 @@ Primordialmente, será analizado as principais pastas contidas no projeto, mas a
 Daqui pra frente, focaremos em duas partes: **Frontend** e **Backend**. 
 
 
-## I. Diretório Frontend
+## • Diretório Frontend
 
 Temos então `public` e `src` como as duas principais pastas para a criação da página, sendo **public** responsável por desenhar, redirecionar e mostrar o resultado do nosso código fonte, buscado diretamente do **src** (source).
 

@@ -9,7 +9,28 @@
 <br/>
 
 
-## 1. O que é?
+
+## Sumário
+
+1. [Introdução](#introdução)
+
+2. [Percorrendo Camadas](#percorrendo-camadas)
+
+   2.1. [Estrutura de Pastas](/camadas/i-estrutura-de-pastas)
+      - [Diretório Frontend](/camadas/i-estrutura-de-pastas#-diretório-frontend)
+      - [Diretório Backend](/camadas/i-estrutura-de-pastas#ii-Back-End)
+
+   2.2. [Componentes da Aplicação](/camadas/ii-componentes-da-aplicacao)
+
+   2.3. [Fluxo de Dados dos Componentes](/camadas/iii-fluxo-de-dados-dos-componentes)
+
+   2.4. [Disponibilidade](/camadas/iv-disponibilidade)
+
+   2.5. [E2E do Estudo Ampliado](/camadas/v-e2e-do-estudo-ampliado)
+***
+
+
+## 1. Introdução
 Estudo Ampliado é um método que consiste em organizar determinado projeto, baseando-se em **camadas**, facilitando a compreensão de toda a obra do sistema.
 
 <details> 
@@ -30,18 +51,3 @@ Estudo Ampliado é um método que consiste em organizar determinado projeto, bas
 ## 2. Percorrendo Camadas
 As camadas, vão determinar em qual nível de entendimento você está em relação ao software, além disso, uma vez que é iniciado cada etapa, a forma de análise varia conforme o avanço. Como propósito de demonstração, será utilizado uma aplicação real para o uso do estudo.
 
-## 2.1. Guia das Camadas
-
-1. [Estrutura de Pastas](/camadas/1-estrutura-de-pastas)
-
-   1. [Diretório Frontend](/camadas/1-estrutura-de-pastas#I-diretorio-front-end)
-   2. [Diretório Backend](/camadas/1-estrutura-de-pastas#II-Back-End)
-   
-2. [Componentes da Aplicação](/camadas/2-componentes-da-aplicacao)
-
-3. [Fluxo de Dados dos Componentes](/camadas/3-fluxo-de-dados-dos-componentes)
-
-4. [Disponibilidade](/camadas/4-disponibilidade)
-
-5. [E2E do Estudo Ampliado](/camadas/5-e2e-do-estudo-ampliado)
-***
