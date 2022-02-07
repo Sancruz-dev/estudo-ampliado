@@ -1,4 +1,21 @@
-# 2. Componentes da Aplicação
-> **2ª Camada**
+# 2.2. Componentes da Aplicação
+> ### Links de Navegação
 
-... 
+1. [Introdução](#1-introdução)
+
+2. [Percorrendo Camadas](#2-percorrendo-camadas)
+
+   2.1. [Estrutura de Pastas](/camadas/i-estrutura-de-pastas)
+      - [Diretório Frontend](/camadas/i-estrutura-de-pastas#-diretório-frontend)
+      - [Diretório Backend](/camadas/i-estrutura-de-pastas#-diretório-backend)
+
+   2.2. [Componentes da Aplicação](#)
+
+   2.3. [Fluxo de Dados dos Componentes](/camadas/iii-fluxo-de-dados-dos-componentes)
+
+   2.4. [Disponibilidade](/camadas/iv-disponibilidade)
+
+   2.5. [E2E do Estudo Ampliado](/camadas/v-e2e-do-estudo-ampliado) 
+***
+
+## **1ª Camada**

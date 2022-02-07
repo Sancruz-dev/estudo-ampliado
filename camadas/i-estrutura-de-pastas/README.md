@@ -1,5 +1,27 @@
 # 2.1. Estrutura de Pastas
-> **1ª Camada**
+
+> ### Links de Navegação
+
+1. [Introdução](https://../../)
+
+2. [Percorrendo Camadas](../../)
+
+   2.1. [Estrutura de Pastas](#)
+      - [Diretório Frontend](#-diretório-frontend)
+      - [Diretório Backend](#-diretório-backend)
+
+   2.2. [Componentes da Aplicação](/camadas/ii-componentes-da-aplicacao)
+
+   2.3. [Fluxo de Dados dos Componentes](/camadas/iii-fluxo-de-dados-dos-componentes)
+
+   2.4. [Disponibilidade](/camadas/iv-disponibilidade)
+
+   2.5. [E2E do Estudo Ampliado](/camadas/v-e2e-do-estudo-ampliado) 
+***
+
+## **1ª Camada**
+
+
 
 Primordialmente, será analizado as principais pastas contidas no projeto, mas antes, abriremos o diretório raíz:
 
@@ -22,7 +44,7 @@ Primordialmente, será analizado as principais pastas contidas no projeto, mas a
 Daqui pra frente, focaremos em duas partes: **Frontend** e **Backend**. 
 
 
-## • Diretório Frontend
+### • Diretório Frontend
 
 Temos então `public` e `src` como as duas principais pastas para a criação da página, sendo **public** responsável por desenhar, redirecionar e mostrar o resultado do nosso código fonte, buscado diretamente do **src** (source).
 
@@ -69,5 +91,5 @@ Temos então `public` e `src` como as duas principais pastas para a criação da
 
 <br/>
 
-## II. Back End
+### II. Diretório Backend
 ...
