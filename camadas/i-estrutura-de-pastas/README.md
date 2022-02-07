@@ -89,5 +89,5 @@ Temos então `public` e `src` como as duas principais pastas para a criação da
 
 <br/>
 
-### II. Diretório Backend
+### • Diretório Backend
 ...
