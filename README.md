@@ -50,7 +50,9 @@ Estudo Ampliado é um método que consiste em organizar determinado projeto, bas
 ## 2. Percorrendo Camadas
 As camadas, vão determinar em qual nível de entendimento você está em relação ao software, além disso, uma vez que é iniciado cada etapa, a forma de análise varia conforme o avanço. Como propósito de demonstração, será utilizado uma aplicação real logo abaixo.
 
-### 2.1. *Camada I* - Estrutura de Pastas
+### 2.1. Estrutura de Pastas
+>  **Camada I**
+
 Primordialmente, será analizado as principais pastas contidas no projeto, mas antes, abriremos o diretório raíz:
 
 <img height="300" src="https://user-images.githubusercontent.com/83969467/151673984-0735a035-4851-4797-a134-e7ee85b6a9a2.png" alt="Diretório Raíz" title="Diretório Raíz">
