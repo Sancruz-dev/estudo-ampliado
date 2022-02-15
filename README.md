@@ -36,7 +36,7 @@
    <details> 
    <summary>Destituídos</summary> 
 
-   - **Pastas**: node_modules, project_guide, .mvn, target, test;
+   - **Pastas**: node_modules, project_guide, .mvn, target, test, static, templates;
 
    - **Arquivos**: package.json, tsconfig.json, README.md, yarn.lock, .gitignore, HELP.md, mvnw, mvnw.cmd, pom.xml, system.properties;
    </details> 

@@ -85,8 +85,8 @@ Desse modo, analisaremos as pastas **java** e **resources** do caminho `backend/
 
 **Java** - É uma pasta de origem, onde contêm os arquivos de origem Java e o código-fonte de teste de unidade
 
-<!-- <details> -->
-   <summary>Ver pasta + detalhes</summary> 
+<details>
+   <summary>+ informações</summary> 
 
    ###
 
@@ -94,46 +94,44 @@ Desse modo, analisaremos as pastas **java** e **resources** do caminho `backend/
 
    ###
 
-   - **config** - contém os arquivos de propriedades com dados de configuração a serem passados ​​para o servidor. Quando você publica o pacote configurável do projeto no servidor, os arquivos nesse diretório são extraídos do pacote configurável e instalados em um diretório comum no servidor, que contém todos os arquivos de configuração desse servidor. No caso do nosso arquivo **SecurityConfig**, a configuração é baseada em [CORS](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/CORS).
+   - **1. config** - contém os arquivos de propriedades com dados de configuração a serem passados ​​para o servidor. Quando você publica o pacote configurável do projeto no servidor, os arquivos nesse diretório são extraídos do pacote configurável e instalados em um diretório comum no servidor, que contém todos os arquivos de configuração desse servidor. No caso do nosso arquivo **SecurityConfig**, a configuração é baseada em [CORS](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/CORS).
 
-   - **entities** - Basicamente são as entidades/tabelas do nosso banco de dados, que declaram atributos, tipos de dados, cria construtores (para instanciar um objeto da classe) e métodos de acesso `get` e `set`;
+   - **2. entities** - Basicamente são as entidades/tabelas do nosso banco de dados, que declaram atributos, tipos de dados, cria construtores (para instanciar um objeto da classe) e métodos de acesso `get` e `set`. Também estabelecem a conexão entre a camada de serviço e a camada de acesso à dados, sempre monitoradas pela JPA (que é nossa ORM);
 
-   - **controllers** -
+   - **3. repositories** - resposáveis por realizar o CRUD das `entities`
 
-   - **dto** - 
+   - **4. dto** - objetos simples para trafegar dados entre o serviço e controntrolador REST, não é monitorado pela JPA e nem faz parte ndo banco de dados.
 
+   - **5. services** - orquestra a camada de acesso à dados, trabalhando com banco de dados, transação e regra de negócio.
 
-   - **repositories** - 
-
-   - **services** - 
-
-
+   - **6. controllers** - controladores REST que mapeiam e estabelecem o método get no caminho da requisição.  
 </details> 
 
 <br/>
 
-**Resources** - A pasta de recursos contém todos os arquivos de **origem não Java**, e por fazer parte da estrutura de projeto maven, podemos colocar a configuração e arquivos de DADOS relacionados ao aplicativo. Os arquivos e pastas que você define aqui são incluídos no caminho do diretório raiz do pacote configurável do projeto.
+**Resources** - A pasta de recursos contém todos os arquivos de **origem não Java**, e por fazer parte da estrutura de projeto maven, podemos colocar a configuração e arquivos de DADOS relacionados ao aplicativo. (Os arquivos e pastas que você define aqui são incluídos no caminho do diretório raiz do pacote configurável do projeto.)
 
 
 <details>
-   <summary>Ver pasta</summary> 
+   <summary>+ informações</summary> 
 
    ###
 
-   ###### <img align="bottom" src="https://user-images.githubusercontent.com/83969467/152855598-e3472f7c-58f7-4a43-a84a-7f5ff27bd1b5.png" alt="Figura 4: Pasta src em Frontend" title="Pasta src"> Figura 4: Pasta src (Frontend)
+   ###### <img align="bottom" src="https://user-images.githubusercontent.com/83969467/154154114-3bc20688-bba4-414a-99b5-95ee6ccb92e0.png" alt="Figura 8: Pasta resources" title="Pasta resources"> Figura 8: Pasta resources (backend)
 
    ###
 
-   **assets** - contém nossos bens/recursos de folha de estilo, imagens, fontes e até scripts. Ou seja, é o complemento de conteúdo.
+   Os recursos do tipo *properties* definem perfis de projeto fazerem o uso de um determinado banco de dados, e na figura 8 existem desses perfis:
 
-   **components** - permite você dividir a UI em partes independentes, reutilizáveis e pensar em cada parte isoladamente. 
+   **application-test.properties** - para testes rápidos e práticos, que usa um pequeno espaço na memória. `H2 Database`
 
-   **pages** - obtém cada página com sua interface completa, com a adição da regra de negócio, captura de argumento passado na rota determinada e manipulação de estrutura de dados.
+   **application-dev.properties** - banco de dados local. `PostgreSQL`
+   
+   **application-prod.properties** - para lançar em um banco na nuvem e deixar em produção. `Heroku`
 
-   **types** - cria a estrutura de tipos do frontend integrando à API.
+   O recurso sem nenhuma definição de perfil (application.properties) configura o perfil de projeto que ficará ativo, estando em desenvolvimento ou produção.
 
-   **ultils** - guarda arquivos utilitários para auxiliar funções específicas no projeto, como por exemplo a validação de email e criação da variável de ambiente. 
-
+   O import.sql está fazendo a inserção de todos os dados nas tabelas do projeto, tornando-se um arquivo de dados.
 </details> 
 
 <br/>
