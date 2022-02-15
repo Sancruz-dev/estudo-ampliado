@@ -21,21 +21,11 @@
 
 ## **1ª Camada**
 
-Primordialmente, será analizado as principais pastas contidas no projeto, mas antes, abriremos o diretório raíz:
+**Primordialmente, será analizado as principais pastas contidas no projeto, mas antes, abriremos o diretório raíz:**
 
 ###### <img height="210" src="https://user-images.githubusercontent.com/83969467/151673984-0735a035-4851-4797-a134-e7ee85b6a9a2.png" alt="Diretório Raíz" title="Diretório Raíz"> Figura 1 - Diretório Raíz
 
-###### Obs: Serão ignoradas algumas pastas do Frontend e arquivos na maioria das  ilustrações, não pela inutilidade, mas por não serem esseciais nesse processo. Seus nomes estão informados logo abaixo.
 
-<details> 
-   <summary>Pastas e arquivos ignorados:</summary> 
-
-   - **Pastas**: node_modules, project_guide, 
-
-   - **Arquivos**: package.json, tsconfig.json, README.md, yarn.lock, .gitignore 
-</details> 
-
-<br/>
 
 Daqui pra frente, focaremos em duas partes: **Frontend** e **Backend**. 
 
@@ -53,7 +43,7 @@ Temos então `public` e `src` como as duas principais pastas para a criação da
    <summary>Ver pasta</summary>
 
    ###
-   ###### <img align="bottom" src="https://user-images.githubusercontent.com/83969467/152815294-83b61296-8ec5-4cfa-b0f9-23af62138e4b.png" alt="Figura 3: Pasta public" title="Pasta public"> Figura 3: Pasta public
+   ###### <img align="bottom" src="https://user-images.githubusercontent.com/83969467/152815294-83b61296-8ec5-4cfa-b0f9-23af62138e4b.png" alt="Figura 3: Pasta public em Frontend" title="Pasta public"> Figura 3: Pasta public (Frontend)
 </details> 
 
 <br/>
@@ -65,7 +55,72 @@ Temos então `public` e `src` como as duas principais pastas para a criação da
 
    ###
 
-   ###### <img align="bottom" src="https://user-images.githubusercontent.com/83969467/152855598-e3472f7c-58f7-4a43-a84a-7f5ff27bd1b5.png" alt="Figura 4: Pasta src" title="Pasta src"> Figura 4: Pasta src
+   ###### <img align="bottom" src="https://user-images.githubusercontent.com/83969467/152855598-e3472f7c-58f7-4a43-a84a-7f5ff27bd1b5.png" alt="Figura 4: Pasta src em Frontend" title="Pasta src"> Figura 4: Pasta src (Frontend)
+
+   ###
+
+   - **assets** - contém nossos bens/recursos de folha de estilo, imagens, fontes e até scripts. Ou seja, é o complemento de conteúdo.
+
+   - **components** - permite você dividir a UI em partes independentes, reutilizáveis e pensar em cada parte isoladamente. 
+
+   - **pages** - obtém cada página com sua interface completa, com a adição da regra de negócio, captura de argumento passado na rota determinada e manipulação de estrutura de dados.
+
+   - **types** - cria a estrutura de tipos do frontend integrando à API.
+
+   - **ultils** - guarda arquivos utilitários para auxiliar funções específicas no projeto, como por exemplo a validação de email e criação da variável de ambiente. 
+
+</details> 
+
+<br/>
+
+### • Diretório Backend
+###### <img align="bottom" src="https://user-images.githubusercontent.com/83969467/153297522-5595d587-40b6-4a52-9494-918db914d0d2.png" alt="Figura 5: Diretório Backend" title="Diretório Backend"> Figura 5: Diretório Backend
+
+Com exceção do arquivo create.sql, a figura 5 mostra toda a **estrutura de pastas de um projeto [Maven](https://maven.apache.org/)**, usado para **gerenciar nosso backend** de ponta à ponta, desde a instalação de dependências, até suas configurações. 
+
+Desse modo, analisaremos as pastas **java** e **resources** do caminho `backend/src/main`.
+
+
+###### <img align="bottom" src="https://user-images.githubusercontent.com/83969467/154117049-88d05ac5-7326-4965-bd9a-dbd7f473f636.png" alt="Figura 6: pasta src em Backend" title="Pasta src"> Figura 6: Pasta src (Backend)
+
+**Java** - É uma pasta de origem, onde contêm os arquivos de origem Java e o código-fonte de teste de unidade
+
+<!-- <details> -->
+   <summary>Ver pasta + detalhes</summary> 
+
+   ###
+
+   ###### <img align="bottom" src="https://user-images.githubusercontent.com/83969467/154122581-4a21fd26-60e4-4031-b94a-2381301c3ed6.png" alt="Figura 7: Pasta Java" title="Pasta java"> Figura 7: Pasta java
+
+   ###
+
+   - **config** - contém os arquivos de propriedades com dados de configuração a serem passados ​​para o servidor. Quando você publica o pacote configurável do projeto no servidor, os arquivos nesse diretório são extraídos do pacote configurável e instalados em um diretório comum no servidor, que contém todos os arquivos de configuração desse servidor. No caso do nosso arquivo **SecurityConfig**, a configuração é baseada em [CORS](https://developer.mozilla.org/pt-BR/docs/Web/HTTP/CORS).
+
+   - **entities** - Basicamente são as entidades/tabelas do nosso banco de dados, que declaram atributos, tipos de dados, cria construtores (para instanciar um objeto da classe) e métodos de acesso `get` e `set`;
+
+   - **controllers** -
+
+   - **dto** - 
+
+
+   - **repositories** - 
+
+   - **services** - 
+
+
+</details> 
+
+<br/>
+
+**Resources** - A pasta de recursos contém todos os arquivos de **origem não Java**, e por fazer parte da estrutura de projeto maven, podemos colocar a configuração e arquivos de DADOS relacionados ao aplicativo. Os arquivos e pastas que você define aqui são incluídos no caminho do diretório raiz do pacote configurável do projeto.
+
+
+<details>
+   <summary>Ver pasta</summary> 
+
+   ###
+
+   ###### <img align="bottom" src="https://user-images.githubusercontent.com/83969467/152855598-e3472f7c-58f7-4a43-a84a-7f5ff27bd1b5.png" alt="Figura 4: Pasta src em Frontend" title="Pasta src"> Figura 4: Pasta src (Frontend)
 
    ###
 
@@ -83,5 +138,4 @@ Temos então `public` e `src` como as duas principais pastas para a criação da
 
 <br/>
 
-### • Diretório Backend
-###### <img align="bottom" src="https://user-images.githubusercontent.com/83969467/153297522-5595d587-40b6-4a52-9494-918db914d0d2.png" alt="Figura 4: Diretório Backend" title="Diretório Backend"> Figura 5: Diretório Backend
+

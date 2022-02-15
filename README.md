@@ -29,7 +29,18 @@
    2.5. [E2E do Estudo Ampliado](/camadas/v-e2e-do-estudo-ampliado)
 ***
 
-<br/>
+### :warning: Avisos e Observações
+
+- Algumas pastas e arquivos não serão comentados em algumas demostrações, porém isso não quer dizer que eles são inúteis, mas sim por não serem totalmente esseciais neste processo. Clique em 'Destituídos' logo abaixo para visualizar seus nomes:
+
+   <details> 
+   <summary>Destituídos</summary> 
+
+   - **Pastas**: node_modules, project_guide, .mvn, target, test;
+
+   - **Arquivos**: package.json, tsconfig.json, README.md, yarn.lock, .gitignore, HELP.md, mvnw, mvnw.cmd, pom.xml, system.properties;
+   </details> 
+
 
 ## 1. Introdução
 Estudo Ampliado é um método que consiste em organizar determinado projeto, baseando-se em **camadas**, facilitando a compreensão de toda a obra do sistema.
