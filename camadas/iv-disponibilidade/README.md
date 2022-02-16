@@ -1,5 +1,5 @@
 # 2.4. Disponibilidade
-> ### Links de Navegação
+> ### Sumário
 
 1. [Introdução](https://github.com/Sancruz-dev/estudo-ampliado#1-introdução)
 

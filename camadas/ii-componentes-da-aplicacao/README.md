@@ -1,5 +1,5 @@
 # 2.2. Componentes da Aplicação
-> ### Links de Navegação
+> ### Sumário
 
 1. [Introdução](https://github.com/Sancruz-dev/estudo-ampliado#1-introdução)
 
@@ -20,8 +20,25 @@
 
 ### **2ª Camada**
 
-Podemos entender como "componente", na maior parte dos cenários, os diversos constituintes de um aplicativo com diferentes responsabilidades, e isso influência a forma como a arquitetura de um aplicação é feita.
+Podemos entender como "componente", na maior parte dos cenários, os diversos constituintes de um aplicativo com diferentes responsabilidades, e isso influência a forma como a arquitetura de uma aplicação é feita.
 
-Numa apilcação front-end, por exemplo, podemos pensar nos componentes de interface e como eles interagem entre si ou com seus estados e requisições.
+Em uma aplicação front-end, por exemplo, podemos pensar nos componentes de interface e como eles interagem entre si ou com seus estados e requisições.
 
-Já numa aplicação back-end, existem os módulos e pacotes responsáveis por diferentes operações, como: serialização de um JSON quando uma requisição é feita, formatação de alguma resposta ou armazenamento de dados ao banco.
+Já numa aplicação back-end, existem os módulos e pacotes responsáveis por diferentes operações, como: serialização de um JSON (quando uma requisição é feita), formatação de alguma resposta ou armazenamento de dados ao banco.
+
+## I. Front-end e seus Componentes
+
+É de suma importância entender que o código fonte (src) React nada mais é do que **interação de componentes**, isto é, TODAS as `function's` são componentes que  retornam HTML.
+
+Haja vista, o tratamento das requisições e seus estados - do projeto de demonstração - é o uso de seus valores como resposta às funções que tem como objetivo buscá-las, tais componentes como:
+
+- **FormCard** - Captura o argumento passado na rota, sendo esse, o identificador do filme escolhido para avaliar. 
+
+- **Form** - a partir da obtenção da `id` do filme passado como argumento, o Form faz a requisição utlizando o useEffect.
+
+- **Listing**
+
+<br/>
+
+## II. Back-end e seus Componentes
+...

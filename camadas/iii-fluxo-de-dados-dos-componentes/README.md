@@ -1,5 +1,5 @@
 # 2.3. Fluxo de Dados dos Componentes
-> ### Links de Navegação
+> ### Sumário
 
 1. [Introdução](https://github.com/Sancruz-dev/estudo-ampliado#1-introdução)
 

@@ -1,5 +1,5 @@
 # 2.5. E2E do Estudo Ampliado
-> ### Links de Navegação
+> ### Sumário
 
 1. [Introdução](https://github.com/Sancruz-dev/estudo-ampliado#1-introdução)
 

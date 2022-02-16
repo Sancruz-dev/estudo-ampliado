@@ -1,6 +1,6 @@
 # 2.1. Estrutura de Pastas
 
-> ### Links de Navegação
+> ### Sumário
 
 1. [Introdução](https://github.com/Sancruz-dev/estudo-ampliado#1-introdução)
 
@@ -64,9 +64,9 @@ Temos então `public` e `src` como as duas principais pastas para a criação da
 
    - **components** - permite você dividir a UI em partes independentes, reutilizáveis e pensar em cada parte isoladamente. 
 
-   - **pages** - obtém cada página com sua interface completa, com a adição da regra de negócio, captura de argumento passado na rota determinada e manipulação de estrutura de dados.
+   - **pages** - obtém a interface completa de cada página, com a adição da regra de negócio, captura de argumento passado na rota determinada e manipulação de estrutura de dados.
 
-   - **types** - cria a estrutura de tipos do frontend integrando à API.
+   - **types** - cria a estrutura de tipos do frontend integrando-a à API.
 
    - **ultils** - guarda arquivos utilitários para auxiliar funções específicas no projeto, como por exemplo a validação de email e criação da variável de ambiente. 
 
