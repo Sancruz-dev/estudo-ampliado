@@ -10,7 +10,7 @@
       1. [Diretório Frontend](#-diretório-frontend)
       2. [Diretório Backend](#-diretório-backend)
 
-   2.2. [Componentes da Aplicação](/camadas/ii-componentes-da-aplicacao#22-componentes-da-aplicacao)
+   2.2. [Componentes da Aplicação](/camadas/ii-componentes-da-aplicacao#22-componentes-da-aplicação)
 
    2.3. [Fluxo de Dados dos Componentes](/camadas/iii-fluxo-de-dados-dos-componentes#23-fluxo-de-dados-dos-componentes)
 
