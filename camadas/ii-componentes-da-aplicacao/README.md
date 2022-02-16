@@ -18,10 +18,10 @@
    2.5. [E2E do Estudo Ampliado](/camadas/v-e2e-do-estudo-ampliado)
 ***
 
-## **2ª Camada**
+### **2ª Camada**
 
 Podemos entender como "componente", na maior parte dos cenários, os diversos constituintes de um aplicativo com diferentes responsabilidades, e isso influência a forma como a arquitetura de um aplicação é feita.
 
 Numa apilcação front-end, por exemplo, podemos pensar nos componentes de interface e como eles interagem entre si ou com seus estados e requisições.
 
-já numa aplicação back-end, existem os módulos e pacotes responsáveis por diferentes operações, como: serialização de um JSON quando uma requisição é feita, formatação de alguma resposta ou armazenamento de dados ao banco.
+Já numa aplicação back-end, existem os módulos e pacotes responsáveis por diferentes operações, como: serialização de um JSON quando uma requisição é feita, formatação de alguma resposta ou armazenamento de dados ao banco.
