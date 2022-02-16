@@ -6,8 +6,8 @@
 2. [Percorrendo Camadas](https://github.com/Sancruz-dev/estudo-ampliado#2-percorrendo-camadas)
 
    2.1. [Estrutura de Pastas](/camadas/i-estrutura-de-pastas)
-      - [Diretório Frontend](/camadas/i-estrutura-de-pastas#-diretório-frontend)
-      - [Diretório Backend](/camadas/i-estrutura-de-pastas#-diretório-backend)
+      1. [Diretório Frontend](/camadas/i-estrutura-de-pastas#-diretório-frontend)
+      2. [Diretório Backend](/camadas/i-estrutura-de-pastas#-diretório-backend)
 
    2.2. [Componentes da Aplicação](/camadas/ii-componentes-da-aplicacao)
 

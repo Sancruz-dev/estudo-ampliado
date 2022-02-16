@@ -7,8 +7,8 @@
 2. [Percorrendo Camadas](https://github.com/Sancruz-dev/estudo-ampliado#2-percorrendo-camadas)
 
    2.1. [Estrutura de Pastas](#)
-      - [Diretório Frontend](#-diretório-frontend)
-      - [Diretório Backend](#-diretório-backend)
+      1. [Diretório Frontend](#-diretório-frontend)
+      2. [Diretório Backend](#-diretório-backend)
 
    2.2. [Componentes da Aplicação](/camadas/ii-componentes-da-aplicacao)
 
@@ -19,7 +19,7 @@
    2.5. [E2E do Estudo Ampliado](/camadas/v-e2e-do-estudo-ampliado) 
 ***
 
-## **1ª Camada**
+### **1ª Camada**
 
 **Primordialmente, será analizado as principais pastas contidas no projeto, mas antes, abriremos o diretório raíz:**
 
@@ -27,10 +27,11 @@
 
 
 
-Daqui pra frente, focaremos em duas partes: **Frontend** e **Backend**. 
+Daqui pra frente, o estudo das estruturas de pastas será dividido entre os dois principais diretórios: **Frontend** e **Backend**. 
 
+<br/>
 
-### • Diretório Frontend
+## I. Diretório Frontend
 
 ###### <img height="200" align="bottom" src="https://user-images.githubusercontent.com/83969467/152814920-e7a37634-de52-4dbc-a294-b93dc9cb7315.png" alt="Figura 2: Diretório Frontend" title="Diretório Frontend"> Figura 2: Diretório Frontend
 
@@ -73,7 +74,7 @@ Temos então `public` e `src` como as duas principais pastas para a criação da
 
 <br/>
 
-### • Diretório Backend
+## II. Diretório Backend
 ###### <img align="bottom" src="https://user-images.githubusercontent.com/83969467/153297522-5595d587-40b6-4a52-9494-918db914d0d2.png" alt="Figura 5: Diretório Backend" title="Diretório Backend"> Figura 5: Diretório Backend
 
 Com exceção do arquivo create.sql, a figura 5 mostra toda a **estrutura de pastas de um projeto [Maven](https://maven.apache.org/)**, usado para **gerenciar nosso backend** de ponta à ponta, desde a instalação de dependências, até suas configurações. 
