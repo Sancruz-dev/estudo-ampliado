@@ -41,6 +41,8 @@
    - **Arquivos**: package.json, tsconfig.json, README.md, yarn.lock, .gitignore, HELP.md, mvnw, mvnw.cmd, pom.xml, system.properties;
    </details> 
 
+- Símbolos como `/* [ ... ] */` em visualizadores de código, significa que nesse espaço há mais códigos relacionados ao projeto.
+
 
 ## 1. Introdução
 Estudo Ampliado é um método que consiste em organizar determinado projeto, baseando-se em **camadas**, facilitando a compreensão de toda a obra do sistema.
