@@ -26,21 +26,29 @@ Em uma aplicação front-end, por exemplo, podemos pensar nos componentes de int
 
 Já numa aplicação back-end, existem os módulos e pacotes responsáveis por diferentes operações, como: serialização de um JSON (quando uma requisição é feita), formatação de alguma resposta ou armazenamento de dados ao banco.
 
+<br/>
+
 ## I. Front-end e seus Componentes
 
 É de suma importância entender que o código fonte (src) React nada mais é do que a **interação de componentes**, isto é, TODAS as `function's` são componentes que retornam HTML.
 
-Há duas imagens abaixo que ilustram o ligamento dos componentes. a figura 9 mostra o componente **Form**, e a figura 10 exibe **Listing**, portanto, vamos nomear cada um dos dois de "**componente-pai**", consequentemente tornando seus constituintes como seus filhos:
 
-###
+### A Interação entre Componentes 
 
-###### <img style="border-radius: 20px" height="300" src="https://user-images.githubusercontent.com/83969467/154770034-309d7bea-831b-4a5d-97b5-135f84a1651d.png" alt="Figura 9: Componente-pai Form" title="Componente-pai Form" /> Figura 9: componente-pai Form
+Há duas imagens abaixo que ilustram o ligamento dos componentes. a figura 9 exibe o componente **Form**, e a figura 10 o **Listing**, portanto, vamos nomear cada um dos dois de "**componente-pai**", consequentemente tornando seus constituintes como seus filhos. 
 
-<br/>
 
-###### <img style="border-radius: 20px" height="300" src="https://user-images.githubusercontent.com/83969467/154773044-f10e17b2-bd4d-492b-b0b3-37ca44009147.png" alt="Figura 10: Componente-pai Listing" title="Componente-pai Listing" /> Figura 10: componente-pai Listing
+###### <img style="border-radius: 12px" height="300" src="https://user-images.githubusercontent.com/83969467/154770034-309d7bea-831b-4a5d-97b5-135f84a1651d.png" alt="Figura 9: Componente-pai Form" title="Componente-pai Form" /> Figura 9: componente-pai Form
 
-<br/>
+
+Vejamos então **Form**, por exemplo, contendo seu filho `FormCard` dentro de si. Logo, **Form** terá em seu código a instanciação somente do componente `FormCard`, e o mesmo, instanciará apenas `BASE_URL`, `Movie` e `Link` seguindo a lógica.
+
+A mesma interação se encaixa em **Listing**:
+
+###### <img style="border-radius: 12px" height="300" src="https://user-images.githubusercontent.com/83969467/154773044-f10e17b2-bd4d-492b-b0b3-37ca44009147.png" alt="Figura 10: Componente-pai Listing" title="Componente-pai Listing" /> Figura 10: componente-pai Listing
+
+
+### Estado e Requisição
 
 Haja vista, o tratamento das requisições e seus estados, é o uso de ambos como resposta aos componentes que tem o objetivo de buscar tais valores/respostas. No projeto de demonstração, os componentes que lidam com essas funções são:
 
@@ -123,7 +131,9 @@ function Form() {
 
 <br/>
 
- **Listing** - executa a paginação de listagem dos filmes, ou seja, o NÚMERO de páginas no elemento respectivo será atualizado toda vez que for interagido. Isso através da mudança de evento monitorado por `onChange`, que consequentemente mudará seu estado. Além disso, **Listing** faz a RENDERIZAÇÃO DINÂMICA DE COLEÇÃO: busca todos os filmes, porém, para conter um limite de cartões de filme (MovieCard) que serão mostrados em tela, há um mapeamento de conteúdo do "estado de `page`", pois dentro desse estado, a quantidade de cartões exibidos estão limitados.
+ **Listing** - executa a paginação de listagem dos filmes, ou seja, o NÚMERO de páginas no elemento respectivo será atualizado toda vez que for interagido. Isso através da mudança de evento monitorado por `onChange`, que consequentemente mudará seu estado. 
+ 
+ Além disso, **Listing** faz a RENDERIZAÇÃO DINÂMICA DE COLEÇÃO: busca todos os filmes, porém, para conter um limite de cartões de filme (MovieCard) que serão mostrados em tela, há um mapeamento de conteúdo do "estado de `page`", pois dentro desse estado, a quantidade de cartões exibidos estão limitados.
 
 
 <details> 
@@ -196,7 +206,28 @@ function Listing() {
 <br/>
 
 
-<br/>
+## II. Back-end e seus Componentes  
 
-## II. Back-end e seus Componentes
-...
+Baseando-se nas informações do tópico java, extraída da estrutura de pastas do [Diretório Backend](/camadas/i-estrutura-de-pastas#-diretório-backend), o assunto será um pouco mais aprofundado para que entendamos melhor sua componentização.
+
+Abaixo está a mais IMPORTANTE imagem para compreender todo o processo de interação entre os componentes back-end à aplicação front-end:
+
+###### <img style="border-radius: 12px" height="300" src="https://user-images.githubusercontent.com/83969467/154807894-15856953-b78a-4ae2-a040-f745b4fd0e6c.png" alt="Figura 11: padrão-camadas" title="padrão-camadas" /> Figura 11: padrão-camadas
+
+A figura 11 deve ser lida de baixo para cima, pois antes do **back-end** receber a requisição front-end (app) repassada pelo controlador REST, é preciso **prepará-lo** do começo ao topo. Desse modo, haverá uma ordem para a criação de cada função.
+
+**1°) entities** - primeiro cria-se as entidades, que vão estabelecer MÉTODOS de acesso ao banco de dados, para que assim sejam utilizados pelos repósitorios, dessa maneira, a entidade não vai acessar diretamente o BD, pois tal tarefa é realizada pelo seu "componente usuário", **repositories**.
+
+**2°) repositories** - Oferece o acesso ao banco para realizar o CRUD nas tabelas.
+
+**3°) dto** - Assim como as **entities**, o Objeto de Tranferência de Dados (DTO) define métodos de acesso à dados, mas com uma diferença: será feito de forma pura e independente, pois antes de criar os **services**, é preciso que o DTO já exista, devido ser o objeto referenciado pelos serviços e responsável por transferir os dados para a próxima camada, controlador REST. 
+
+**4°) services** - aqui ocorre a formatação de sua resposta, sendo limitado a quantidade de dados que serão enviados ao front-end, ou especificado algum atrbito a ser enviado também, como o `id`. Contudo, também há a conversão dos dados recebidos, para que assim, possam transferidos ao **controller**. 
+
+**5°) controller** - Mapeia a resposta vinda de **services**, e realiza uma requisição passando um método get em seu caminho, para que tal método possa ser usado pelo JSON, estabelecendo uma conexão com o front-end.
+
+### Armazenamento de Dados
+
+
+
+- requisição - formatação de algumas resposta - armazenamento de dados ao banco;
