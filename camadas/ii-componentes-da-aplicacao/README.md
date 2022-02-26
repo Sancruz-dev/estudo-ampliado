@@ -10,6 +10,8 @@
       2. [Diretório Backend](/camadas/i-estrutura-de-pastas#-diretório-backend)
 
    2.2. [Componentes da Aplicação](#)
+      1. [Front-end e seus Componentes](#/Front-end-e-seus-Componentes)
+      2. [Back-end e seus Componentes](#/Back-end-e-seus-Componentes)
 
    2.3. [Fluxo de Dados dos Componentes](/camadas/iii-fluxo-de-dados-dos-componentes#23-fluxo-de-dados-dos-componentes)
 
@@ -33,7 +35,7 @@ Já numa aplicação back-end, existem os módulos e pacotes responsáveis por d
 É de suma importância entender que o código fonte (src) React nada mais é do que a **interação de componentes**, isto é, TODAS as `function's` são componentes que retornam HTML.
 
 
-### A Interação entre Componentes 
+### a-) A Interação entre Componentes 
 
 Há duas imagens abaixo que ilustram o ligamento dos componentes. a figura 9 exibe o componente **Form**, e a figura 10 o **Listing**, portanto, vamos nomear cada um dos dois de "**componente-pai**", consequentemente tornando seus constituintes como seus filhos. 
 
@@ -48,7 +50,7 @@ A mesma interação se encaixa em **Listing**:
 ###### <img style="border-radius: 12px" height="300" src="https://user-images.githubusercontent.com/83969467/154773044-f10e17b2-bd4d-492b-b0b3-37ca44009147.png" alt="Figura 10: Componente-pai Listing" title="Componente-pai Listing" /> Figura 10: componente-pai Listing
 
 
-### Estado e Requisição
+### b-) Estado e Requisição
 
 Haja vista, o tratamento das requisições e seus estados, é o uso de ambos como resposta aos componentes que tem o objetivo de buscar tais valores/respostas. No projeto de demonstração, os componentes que lidam com essas funções são:
 
@@ -216,18 +218,195 @@ Abaixo está a mais IMPORTANTE imagem para compreender todo o processo de intera
 
 A figura 11 deve ser lida de baixo para cima, pois antes do **back-end** receber a requisição front-end (app) repassada pelo controlador REST, é preciso **prepará-lo** do começo ao topo. Desse modo, haverá uma ordem para a criação de cada função.
 
-**1°) entities** - primeiro cria-se as entidades, que vão estabelecer MÉTODOS de acesso ao banco de dados, para que assim sejam utilizados pelos repósitorios, dessa maneira, a entidade não vai acessar diretamente o BD, pois tal tarefa é realizada pelo seu "componente usuário", **repositories**.
+### a-) Contrução e Acesso à Dados
 
-**2°) repositories** - Oferece o acesso ao banco para realizar o CRUD nas tabelas.
-
-**3°) dto** - Assim como as **entities**, o Objeto de Tranferência de Dados (DTO) define métodos de acesso à dados, mas com uma diferença: será feito de forma pura e independente, pois antes de criar os **services**, é preciso que o DTO já exista, devido ser o objeto referenciado pelos serviços e responsável por transferir os dados para a próxima camada, controlador REST. 
-
-**4°) services** - aqui ocorre a formatação de sua resposta, sendo limitado a quantidade de dados que serão enviados ao front-end, ou especificado algum atrbito a ser enviado também, como o `id`. Contudo, também há a conversão dos dados recebidos, para que assim, possam transferidos ao **controller**. 
-
-**5°) controller** - Mapeia a resposta vinda de **services**, e realiza uma requisição passando um método get em seu caminho, para que tal método possa ser usado pelo JSON, estabelecendo uma conexão com o front-end.
-
-### Armazenamento de Dados
+**1°) entities** - primeiro cria-se as entidades, que vão estabelecer MÉTODOS de acesso ao banco de dados, para que assim sejam utilizados pelos repósitorios, e dessa maneira, a entidade não vai acessar diretamente o BD, pois tal tarefa é realizada pelos **repositories**.
 
 
+<details> 
+   <summary>Ver códigos</summary>
 
-- requisição - formatação de algumas resposta - armazenamento de dados ao banco;
+``` java
+// ENTIDADE User /
+
+@Entity
+@Table(name = "tb_user")
+public class User {
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Long id;
+	private String email;
+	
+	public User() {}
+
+	public User(Long id, String email) {
+		this.id = id;
+		this.email = email;
+	}
+
+	public Long getId() {
+		return id;
+	}
+
+	public void setId(Long id) {
+		this.id = id;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+}
+```
+
+</details> 
+
+<br/>
+
+**2°) repositories** - Obtem todo o acesso ao banco (através da sua extensão usando JpaRepository) para realizar o CRUD nas tabelas.
+
+<details> 
+   <summary>Ver códigos</summary>
+
+``` java
+// REPOSITÓRIO Movie 
+
+// JpaRepository<Nome da entidade, tipo da id da entidade>
+public interface MovieRepository extends JpaRepository<Movie, Long>{
+
+}
+```
+
+</details> 
+
+<br/>
+ 
+**3°) dto** - Assim como as **entities**, o Objeto de Tranferência de Dados (DTO) define também métodos de acesso, mas com uma diferença: será feito de forma pura e independente, pois antes de criar os **services**, é preciso que o DTO de alguma entidade já exista, devido ser o objeto referenciado pelos serviços e responsável por transferir os dados para a próxima camada, controlador REST. 
+
+<details> 
+   <summary>Ver códigos</summary>
+
+``` java
+// DTO User 
+
+public class ScoreDTO {
+	
+	private Long movieId;
+	private String email;
+	private Double score;
+	
+	public ScoreDTO() {}
+	
+	public Long getMovieId() {
+		return movieId;
+	}
+
+	public void setMovieId(Long movieId) {
+		this.movieId = movieId;
+	}
+
+	public String getEmail() {
+		return email;
+	}
+
+	public void setEmail(String email) {
+		this.email = email;
+	}
+
+	public Double getScore() {
+		return score;
+	}
+
+	public void setScore(Double score) {
+		this.score = score;
+	}
+}
+```
+
+</details> 
+
+<br/>
+ 
+### b-) Formatação das Respostas
+
+**4°) services** - aqui ocorre a "edição" das respostas, sendo limitado a quantidade de dados que serão enviados ao front-end, ou especificado algum atribito a ser enviado também, como o `id`. Contudo, há a conversão dos dados em DTO, para que assim, possam transferidos ao **controller** como forma de objeto simples. 
+
+<details> 
+   <summary>Ver códigos</summary>
+
+``` java
+// SERVIÇO Movie
+
+// Registra o MovieService como um componente do sistema
+@Service
+public class MovieService {
+	
+	@Autowired
+	private MovieRepository repository;
+
+	/* A função faz a busca no repositório retornando uma página (sublista)
+	 	de Movie, convertendo-a para MovieDTO em seguida.
+		@Transactional: garante que o método resolva tudo relacionado à JPA nessa camada.
+		readOnly = true: para ser mais eficiente no banco.*/
+	@Transactional(readOnly = true)
+	public Page<MovieDTO> findAll(Pageable pageable) {
+		Page<Movie> result = repository.findAll(pageable);
+		Page<MovieDTO> page = result.map(x -> new MovieDTO(x));
+		return page;
+	}
+	
+	@Transactional(readOnly = true)
+	public MovieDTO findById(Long id) {
+		Movie result = repository.findById(id).get();
+		MovieDTO dto = new MovieDTO(result);
+		return dto;
+	}
+}
+```
+
+</details> 
+
+<br/>
+ 
+### c-) Requisição
+
+**5°) controller** - Mapeia a resposta vinda de **services**, e realiza uma requisição passando um método get em seu caminho, para que o método possa ser usado pelo JSON, estabelecendo uma conexão com o front-end.
+
+<details> 
+   <summary>Ver códigos</summary>
+
+``` java
+// CONTROLADOR Movie //
+
+@RestController
+@RequestMapping(value = "/movies")
+public class MovieController {
+	
+	@Autowired
+	private MovieService service;
+	
+	@GetMapping
+	public Page<MovieDTO> findAll(Pageable pageable) {
+		return service.findAll(pageable);
+	}
+	
+	@GetMapping(value = "/{id}")
+	public MovieDTO findById(@PathVariable Long id) {
+		return service.findById(id);
+	}
+}
+```
+
+</details> 
+
+<br/>
+ 
+#### A partir dessas configurações, o back-end já está pronto para receber as requisições front-end.
+
+<br/>
+
+> ### [Ir para a próxima camada :arrow_right:](/camadas/iii-fluxo-de-dados-dos-componentes#23-fluxo-de-dados-dos-componentes)
