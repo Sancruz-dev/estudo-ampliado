@@ -21,6 +21,8 @@
       2. [Diretório Backend](/camadas/i-estrutura-de-pastas#-diretório-backend)
 
    2.2. [Componentes da Aplicação](/camadas/ii-componentes-da-aplicacao#22-componentes-da-aplicação)
+      1. [Front-end e seus Componentes](#i-front-end-e-seus-componentes)
+      2. [Back-end e seus Componentes](#i-back-end-e-seus-componentes)
 
    2.3. [Fluxo de Dados dos Componentes](/camadas/iii-fluxo-de-dados-dos-componentes#23-fluxo-de-dados-dos-componentes)
 
@@ -65,3 +67,4 @@ Estudo Ampliado é um método que consiste em organizar determinado projeto, bas
 ## 2. Percorrendo Camadas
 As camadas, vão determinar em qual nível de entendimento você está em relação ao software, além disso, uma vez que é iniciado cada etapa, a forma de análise varia conforme o avanço. Como propósito de demonstração, será utilizado uma aplicação real para o uso do estudo.
 
+> ### [Ir para a próxima camada :arrow_right:](/camadas/i-estrutura-de-pastas#21-estrutura-de-pastas)

@@ -10,6 +10,8 @@
       2. [Diretório Backend](/camadas/i-estrutura-de-pastas#-diretório-backend)
 
    2.2. [Componentes da Aplicação](/camadas/ii-componentes-da-aplicacao#22-componentes-da-aplicação)
+      1. [Front-end e seus Componentes](#i-front-end-e-seus-componentes)
+      2. [Back-end e seus Componentes](#i-back-end-e-seus-componentes)
 
    2.3. [Fluxo de Dados dos Componentes](/camadas/iii-fluxo-de-dados-dos-componentes#23-fluxo-de-dados-dos-componentes)
 
@@ -21,3 +23,7 @@
 ### **4ª Camada**
 
 ...
+
+<br/>
+
+> ### [Ir para a próxima camada :arrow_right:](/camadas/v-e2e-do-estudo-ampliado#25-e2e-do-estudo-ampliado)

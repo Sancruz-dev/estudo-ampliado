@@ -10,8 +10,8 @@
       2. [Diretório Backend](/camadas/i-estrutura-de-pastas#-diretório-backend)
 
    2.2. [Componentes da Aplicação](#)
-      1. [Front-end e seus Componentes](#/Front-end-e-seus-Componentes)
-      2. [Back-end e seus Componentes](#/Back-end-e-seus-Componentes)
+      1. [Front-end e seus Componentes](#i-front-end-e-seus-componentes)
+      2. [Back-end e seus Componentes](#i-back-end-e-seus-componentes)
 
    2.3. [Fluxo de Dados dos Componentes](/camadas/iii-fluxo-de-dados-dos-componentes#23-fluxo-de-dados-dos-componentes)
 
@@ -218,7 +218,7 @@ Abaixo está a mais IMPORTANTE imagem para compreender todo o processo de intera
 
 A figura 11 deve ser lida de baixo para cima, pois antes do **back-end** receber a requisição front-end (app) repassada pelo controlador REST, é preciso **prepará-lo** do começo ao topo. Desse modo, haverá uma ordem para a criação de cada função.
 
-### a-) Contrução e Acesso à Dados
+### a-) Construção e Acesso à Dados
 
 **1°) entities** - primeiro cria-se as entidades, que vão estabelecer MÉTODOS de acesso ao banco de dados, para que assim sejam utilizados pelos repósitorios, e dessa maneira, a entidade não vai acessar diretamente o BD, pois tal tarefa é realizada pelos **repositories**.
 
