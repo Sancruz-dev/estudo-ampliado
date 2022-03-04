@@ -68,4 +68,6 @@ Estudo Ampliado é um método que consiste em organizar determinado projeto, bas
 ## 2. Percorrendo Camadas
 As camadas, vão determinar em qual nível de entendimento você está em relação ao software, além disso, uma vez que é iniciado cada etapa, a forma de análise varia conforme o avanço. Como propósito de demonstração, será utilizado uma aplicação real para o uso do estudo.
 
+<br/>
+
 > ### [Ir para a próxima camada :arrow_right:](/camadas/i-estrutura-de-pastas#21-estrutura-de-pastas)
