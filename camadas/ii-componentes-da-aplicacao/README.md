@@ -11,9 +11,12 @@
 
    2.2. [Componentes da Aplicação](#)
       1. [Front-end e seus Componentes](#i-front-end-e-seus-componentes)
-      2. [Back-end e seus Componentes](#i-back-end-e-seus-componentes)
+      2. [Back-end e seus Componentes](#ii-back-end-e-seus-componentes)
 
-   2.3. [Fluxo de Dados](/camadas/iii-fluxo-de-dados-dos-componentes#23-fluxo-de-dados)
+   2.3. [Fluxo de Dados](/camadas/iii-fluxo-de-dados#23-fluxo-de-dados)
+      1. [Entrada e Saída](/camadas/iii-fluxo-de-dados#i-entrada-e-saída)
+      2. [Armazenamento e Processo](/camadas/iii-fluxo-de-dados#ii-armazenamento-e-processo)
+      3. [Tratamento](/camadas/iii-fluxo-de-dados#iii-tratamento)
 
    2.4. [Disponibilidade](/camadas/iv-disponibilidade#24-disponibilidade)
 

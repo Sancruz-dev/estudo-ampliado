@@ -7,14 +7,17 @@
 2. [Percorrendo Camadas](https://github.com/Sancruz-dev/estudo-ampliado#2-percorrendo-camadas)
 
    2.1. [Estrutura de Pastas](#)
-      1. [Diretório Frontend](#-diretório-frontend)
-      2. [Diretório Backend](#-diretório-backend)
+      1. [Diretório Frontend](#i-diretório-frontend)
+      2. [Diretório Backend](#ii-diretório-backend)
 
    2.2. [Componentes da Aplicação](/camadas/ii-componentes-da-aplicacao#22-componentes-da-aplicação)
-      1. [Front-end e seus Componentes](#i-front-end-e-seus-componentes)
-      2. [Back-end e seus Componentes](#i-back-end-e-seus-componentes)
+      1. [Front-end e seus Componentes](/camadas/ii-componentes-da-aplicacao#i-front-end-e-seus-componentes)
+      2. [Back-end e seus Componentes](/camadas/ii-componentes-da-aplicacao#ii-back-end-e-seus-componentes)
 
-   2.3. [Fluxo de Dados](/camadas/iii-fluxo-de-dados-dos-componentes#23-fluxo-de-dados)
+   2.3. [Fluxo de Dados](/camadas/iii-fluxo-de-dados#23-fluxo-de-dados)
+      1. [Entrada e Saída](/camadas/iii-fluxo-de-dados#i-entrada-e-saída)
+      2. [Armazenamento e Processo](/camadas/iii-fluxo-de-dados#ii-armazenamento-e-processo)
+      3. [Tratamento](/camadas/iii-fluxo-de-dados#iii-tratamento)
 
    2.4. [Disponibilidade](/camadas/iv-disponibilidade#24-disponibilidade)
 
