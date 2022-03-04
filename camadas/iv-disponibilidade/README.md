@@ -25,7 +25,19 @@
 
 ### **4ª Camada**
 
-...
+A forma como uma aplicação é disponibilizada para quem vai utilizá-la, faz parte da arquitetura de projetos. Portanto, o aplicativo que analisamos é uma API em REST, ou seja, é uma API que se modela aos princípios de projeto do estilo de arquitetura do Representational State Transfer.
+
+## I. Comunicação API RESTful
+
+A comunicação, é feita por via de solicitações HTTP para executar o CRUD em um recurso. Por exemplo, uma API REST usaria uma solicitação GET para recuperar um registro, uma solicitação POST para criar um registro, uma solicitação PUT para atualizar um registro e uma solicitação DELETE para excluir um registro. 
+
+Todos os métodos HTTP podem ser usados em chamadas da API. Uma API de REST bem projetada é semelhante a um website em execução em um navegador da web com funcionalidade HTTP integrada.
+
+<br/>
+
+## II. Endpoints
+
+
 
 <br/>
 

@@ -47,6 +47,8 @@ Sob o mesmo ponto de vista podemos comparar com o método INPUT e OUTPUT atravé
 
 Por conseguinte, a saída (output) do campo de avaliação será a exibição da média de avaliações, definidas por todos os usuários do filme correspondente. E o campo de email, não terá uma saída, pois não há uma tela de perfil do usuário que mostre seu email por exemplo, não neste atual projeto.
 
+<br/>
+
 ## II. Armazenamento e Processo
 
 Os dados do nosso software podem ser armazenados ou processados por [três tipos de perfis](/camadas/i-estrutura-de-pastas#-resources): **teste, desenvolvimento e produção**.
