@@ -88,4 +88,4 @@ Perceba que antes que da classe há uma instanciação `@Entity`, isto é, uma _
 
 > ### [Próxima camada :arrow_right:](/camadas/iv-disponibilidade#24-disponibilidade)
 
-> ### [Voltar camada :arrow_right:](/camadas/ii-componentes-da-aplicacao#22-componentes-da-aplicação)
+> ### [Voltar camada :leftwards_arrow_with_hook:](/camadas/ii-componentes-da-aplicacao#22-componentes-da-aplicação)
