@@ -13,7 +13,7 @@
       1. [Front-end e seus Componentes](#i-front-end-e-seus-componentes)
       2. [Back-end e seus Componentes](#i-back-end-e-seus-componentes)
 
-   2.3. [Fluxo de Dados dos Componentes](/camadas/iii-fluxo-de-dados-dos-componentes#23-fluxo-de-dados-dos-componentes)
+   2.3. [Fluxo de Dados](/camadas/iii-fluxo-de-dados-dos-componentes#23-fluxo-de-dados)
 
    2.4. [Disponibilidade](/camadas/iv-disponibilidade#24-disponibilidade)
 

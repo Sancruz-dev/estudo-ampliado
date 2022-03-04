@@ -14,7 +14,7 @@
       1. [Front-end e seus Componentes](#i-front-end-e-seus-componentes)
       2. [Back-end e seus Componentes](#i-back-end-e-seus-componentes)
 
-   2.3. [Fluxo de Dados dos Componentes](/camadas/iii-fluxo-de-dados-dos-componentes#23-fluxo-de-dados-dos-componentes)
+   2.3. [Fluxo de Dados](/camadas/iii-fluxo-de-dados-dos-componentes#23-fluxo-de-dados)
 
    2.4. [Disponibilidade](/camadas/iv-disponibilidade#24-disponibilidade)
 
@@ -26,7 +26,6 @@
 **Primordialmente, será analizado as principais pastas contidas no projeto, mas antes, abriremos o diretório raíz:**
 
 ###### <img height="210" style="border-radius: 8px" src="https://user-images.githubusercontent.com/83969467/151673984-0735a035-4851-4797-a134-e7ee85b6a9a2.png" alt="Diretório Raíz" title="Diretório Raíz"> Figura 1 - Diretório Raíz
-
 
 
 Daqui pra frente, o estudo das estruturas de pastas será dividido entre os dois principais diretórios: **Frontend** e **Backend**. 
@@ -41,7 +40,9 @@ Temos então `public` e `src` como as duas principais pastas para a criação da
 
 ###
 
-**public** - contém apenas dois arquivos: o primeiro é o **index.html**, cuja função é trazer e renderizar todo o código vindo de **src**, e o segundo é o **_redirects**, usado para a configuração de redirecionamento para hospedar o website no [Netlify](https://www.netlify.com/).
+### public
+
+Contém apenas dois arquivos: o primeiro é o **index.html**, cuja função é trazer e renderizar todo o código vindo de **src**, e o segundo é o **_redirects**, usado para a configuração de redirecionamento para hospedar o website no [Netlify](https://www.netlify.com/).
 <details> 
    <summary>Ver pasta</summary>
 
@@ -51,7 +52,9 @@ Temos então `public` e `src` como as duas principais pastas para a criação da
 
 <br/>
 
-**source/src** - É compostos por algumas pastas (havendo mais pastas e/ou arquivos dentro) que vão formar módulos e componentes, para depois serem encapsulados na tag `<App/>` dentro do renderizador `ReactDOM`, que também faz a busca do `id="root"` que foi criado em **public**.
+### source/src
+
+É compostos por algumas pastas (havendo mais pastas e/ou arquivos dentro) que vão formar módulos e componentes, para depois serem encapsulados na tag `<App/>` dentro do renderizador `ReactDOM`, que também faz a busca do `id="root"` que foi criado em **public**.
 
 <details>
    <summary>Ver pasta + detalhes</summary> 
@@ -86,7 +89,8 @@ Desse modo, analisaremos as pastas **java** e **resources** do caminho `backend/
 
 ###### <img align="bottom" style="border-radius: 8px" src="https://user-images.githubusercontent.com/83969467/154117049-88d05ac5-7326-4965-bd9a-dbd7f473f636.png" alt="Figura 6: pasta src em Backend" title="Pasta src"> Figura 6: Pasta src (Backend)
 
-**Java** - é uma pasta onde contêm os arquivos de origem Java, e o código-fonte de teste de unidade respectiva à ele, e desse modo, tudo pode ser organizado por pacotes que podem ser criados pelo desenvolvedor.
+### java 
+É uma pasta onde contêm os arquivos de origem Java, e o código-fonte de teste de unidade respectiva à ele, e desse modo, tudo pode ser organizado por pacotes que podem ser criados pelo desenvolvedor.
 
 <details>
    <summary>+ informações</summary> 
@@ -112,7 +116,9 @@ Desse modo, analisaremos as pastas **java** e **resources** do caminho `backend/
 
 <br/>
 
-**Resources** - A pasta de recursos contém todos os arquivos de **origem não Java**, e por fazer parte da estrutura de projeto maven, podemos colocar a configuração e arquivos de DADOS relacionados ao aplicativo. (Os arquivos e pastas que você define aqui são incluídos no caminho do diretório raiz do pacote configurável do projeto.)
+### resources 
+
+A pasta de recursos contém todos os arquivos de **origem não Java**, e por fazer parte da estrutura de projeto maven, podemos colocar a configuração e arquivos de DADOS relacionados ao aplicativo. (Os arquivos e pastas que você define aqui são incluídos no caminho do diretório raiz do pacote configurável do projeto.)
 
 
 <details>
@@ -124,15 +130,15 @@ Desse modo, analisaremos as pastas **java** e **resources** do caminho `backend/
 
    ###
 
-   Os recursos do tipo *properties* definem perfis de projeto fazerem o uso de um determinado banco de dados, e na figura 8 existem desses perfis:
+   Os recursos do tipo *properties* definem perfis de projeto que fazem o uso de um determinado banco de dados. E como podemos ver, na figura 8 existem três desses perfis:
 
    **application-test.properties** - para testes rápidos e práticos, que usa um pequeno espaço na memória. `H2 Database`
 
-   **application-dev.properties** - banco de dados local. `PostgreSQL`
+   **application-dev.properties** - banco de dados local, "simulação de produção". `PostgreSQL`
    
    **application-prod.properties** - para lançar em um banco na nuvem e deixar em produção. `Heroku`
 
-   O recurso sem nenhuma definição de perfil (application.properties) configura o perfil de projeto que ficará ativo, estando em desenvolvimento ou produção.
+   O recurso application.properties, configura o apenas um dos três perfis de projeto para ficar ativo.
 
    O import.sql está fazendo a inserção de todos os dados nas tabelas do projeto, tornando-se um arquivo de dados.
 </details> 

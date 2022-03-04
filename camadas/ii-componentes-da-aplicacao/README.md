@@ -13,7 +13,7 @@
       1. [Front-end e seus Componentes](#i-front-end-e-seus-componentes)
       2. [Back-end e seus Componentes](#i-back-end-e-seus-componentes)
 
-   2.3. [Fluxo de Dados dos Componentes](/camadas/iii-fluxo-de-dados-dos-componentes#23-fluxo-de-dados-dos-componentes)
+   2.3. [Fluxo de Dados](/camadas/iii-fluxo-de-dados-dos-componentes#23-fluxo-de-dados)
 
    2.4. [Disponibilidade](/camadas/iv-disponibilidade#24-disponibilidade)
 
@@ -333,7 +333,7 @@ public class ScoreDTO {
  
 ### b-) Formatação das Respostas
 
-**4°) services** - aqui ocorre a "edição" das respostas, sendo limitado a quantidade de dados que serão enviados ao front-end, ou especificado algum atribito a ser enviado também, como o `id`. Contudo, há a conversão dos dados em DTO, para que assim, possam transferidos ao **controller** como forma de objeto simples. 
+**4°) services** - aqui ocorre a "edição" das respostas, sendo limitado a quantidade de dados que serão enviados ao front-end, ou especificado algum atribito a ser enviado também, como o `id`. Contudo, há a conversão dos dados em DTO, para que assim, possam ser transferidos ao **controller** como forma de objeto simples. 
 
 <details> 
    <summary>Ver códigos</summary>
@@ -372,9 +372,9 @@ public class MovieService {
 
 <br/>
  
-### c-) Requisição
+### c-) Serialização
 
-**5°) controller** - Mapeia a resposta vinda de **services**, e realiza uma requisição passando um método get em seu caminho, para que o método possa ser usado pelo JSON, estabelecendo uma conexão com o front-end.
+**5°) controller** - Mapeia a resposta vinda de **services**, e realiza uma requisição passando um método get em seu caminho, para que o mesmo possa ser acessado pelo JSON estabelecendo uma conexão ao front-end. Essa função pode ser definida como **serialização**.
 
 <details> 
    <summary>Ver códigos</summary>
@@ -409,4 +409,4 @@ public class MovieController {
 
 <br/>
 
-> ### [Ir para a próxima camada :arrow_right:](/camadas/iii-fluxo-de-dados-dos-componentes#23-fluxo-de-dados-dos-componentes)
+> ### [Ir para a próxima camada :arrow_right:](/camadas/iii-fluxo-de-dados-dos-componentes#23-fluxo-de-dados)
