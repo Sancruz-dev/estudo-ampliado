@@ -19,6 +19,8 @@
       3. [Tratamento](/camadas/iii-fluxo-de-dados#iii-tratamento)
 
    2.4. [Disponibilidade](/camadas/iv-disponibilidade#24-disponibilidade)
+      1. [Comunicação API RESTful](/camadas/iv-disponibilidade#i-comunicação-api-restful)
+      2. [Endpoints](/camadas/iv-disponibilidade#ii-endpoints)
 ***
 
 ### **2ª Camada**
