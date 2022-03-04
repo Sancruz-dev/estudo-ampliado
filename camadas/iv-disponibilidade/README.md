@@ -19,6 +19,8 @@
       3. [Tratamento](/camadas/iii-fluxo-de-dados#iii-tratamento)
 
    2.4. [Disponibilidade](#)
+      1. [Comunicação API RESTful](#i-comunicação-api-restful)
+      2. [Endpoints](#ii-endpoints)
 ***
 
 ### **4ª Camada**
@@ -35,4 +37,16 @@ Todos os métodos HTTP podem ser usados em chamadas da API. Uma API de REST bem 
 
 ## II. Endpoints
 
+Os ***endpoints*** disponibilizados no projeto são: cliente, servidor do Netlify juntamente com o servidor do Heroku.
 
+Os dados que a API espera receber dos ***endpoints***, é simplesmente as informações que estão armazenadas nos servidores com as que o usuário inserir na aplicação. Em suma, é os dados relacionados ao filme (como o nome, imagem, média e quantidade total de avaliação), e ao usuário (como seu email e avaliação sobre o filme). 
+
+Quando os ***endpoints*** forem chamados, as respostas serão fornecidas à API de acordo com o que a página pede: 
+
+- Se a página for a de listagem, então a saída será todas as informações de cada filme, para serem exibidas em tela. 
+
+- E se for uma página de formulário, a respota será as informações do filme ESCOLHIDO pelo usuário, juntamente com o armazenamento dos dados inseridos (email e avaliação).
+
+<br/>
+
+> ### [Voltar ao início :leftwards_arrow_with_hook:](https://github.com/Sancruz-dev/estudo-ampliado)

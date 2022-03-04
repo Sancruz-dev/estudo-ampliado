@@ -53,9 +53,9 @@ Os dados do nosso software podem ser armazenados ou processados por [três tipos
 
 - O tipo **teste** implementa o processo das informações em segundo plano, para que o sistema seja testado e seus dados salvos de maneira simples e rápida. Tarefa exercida pelo _H2 Database_.
 
-- O perfil de **desenvolvimento** estabelece uma simulação de produção, para que os elementos sejam guardados num banco de dados local.
+- O perfil de **desenvolvimento** estabelece uma simulação de produção, para que os elementos sejam guardados num banco de dados local, usando o _PostgreSQL_.
 
-- Por fim, o perfil do tipo **produção** é o "deploy do banco", ou seja, os dados são implantados na nuvem para que possam ser acessados via web. 
+- Por fim, o perfil do tipo **produção** é o "deploy do banco", ou seja, os dados são implantados na nuvem para que possam ser acessados via web, sendo gerenciado pelo SGBD Heroku.
 
 <br/>
 
