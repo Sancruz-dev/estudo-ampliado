@@ -19,8 +19,6 @@
       3. [Tratamento](/camadas/iii-fluxo-de-dados#iii-tratamento)
 
    2.4. [Disponibilidade](/camadas/iv-disponibilidade#24-disponibilidade)
-
-   2.5. [E2E do Estudo Ampliado](/camadas/v-e2e-do-estudo-ampliado#25-e2e-do-estudo-ampliado)
 ***
 
 ### **2ª Camada**

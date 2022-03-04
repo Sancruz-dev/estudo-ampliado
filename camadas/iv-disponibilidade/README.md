@@ -19,8 +19,6 @@
       3. [Tratamento](/camadas/iii-fluxo-de-dados#iii-tratamento)
 
    2.4. [Disponibilidade](#)
-
-   2.5. [E2E do Estudo Ampliado](/camadas/v-e2e-do-estudo-ampliado#25-e2e-do-estudo-ampliado) 
 ***
 
 ### **4ª Camada**
@@ -38,7 +36,3 @@ Todos os métodos HTTP podem ser usados em chamadas da API. Uma API de REST bem 
 ## II. Endpoints
 
 
-
-<br/>
-
-> ### [Ir para a próxima camada :arrow_right:](/camadas/v-e2e-do-estudo-ampliado#25-e2e-do-estudo-ampliado)
